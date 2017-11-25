@@ -1,0 +1,162 @@
+{
+  "name":"relative_layout",
+  "type":"view_group",
+  "properties": [
+    {
+      "name": "width",
+      "type":"string",
+      "value": "match_parent"
+    },
+    {
+      "name": "height",
+      "type":"string",
+      "value": "match_parent"
+    }
+  ],
+  "children": [
+    {
+      "name":"linear_layout",
+      "type":"view_group",
+      "properties": [
+        {
+          "name": "width",
+          "type":"string",
+          "value": "match_parent"
+        },
+        {
+          "name": "height",
+          "type":"string",
+          "value": "match_parent"
+        },
+        {
+          "name": "orientation",
+          "type":"string",
+          "value": "horizontal"
+        }
+      ],
+      "children" : [
+        {
+          "name": "image_view",
+          "type": "child_view",
+          "parent" : "linear_layout",
+          "properties": [
+            {
+              "name": "width",
+              "type":"int",
+              "value": "300"
+            },
+            {
+              "name": "height",
+              "type":"string",
+              "value": "match_parent"
+            },
+            {
+              "name": "id",
+              "type":"int",
+              "value": "1920200"
+            },
+            {
+              "name": "src",
+              "type": "string",
+              "value": "hero"
+            },
+            {
+              "name": "scaleType",
+              "type": "string",
+              "value": "centerCrop"
+            }
+          ]
+        },
+        {
+          "name": "text_view",
+          "type":"child_view",
+          "parent" : "linear_layout",
+          "properties" : [
+            {
+              "name": "width",
+              "type": "string",
+              "value": "wrap_content"
+            },
+            {
+              "name": "height",
+              "type": "string",
+              "value": "wrap_content"
+            },
+            {
+              "name": "text",
+              "type": "string",
+              "value": "Online Specialist Visit"
+            },
+            {
+              "name": "textColor",
+              "type": "string",
+              "value": "#AE2232"
+            },
+            {
+              "name": "textSize",
+              "type": "int",
+              "value": "20"
+            },
+            {
+              "name": "textStyle",
+              "type": "string",
+              "value": "bold"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "text_view",
+      "type":"child_view",
+      "parent" : "relative_layout",
+      "properties" : [
+        {
+          "name": "width",
+          "type": "string",
+          "value": "wrap_content"
+        },
+        {
+          "name": "height",
+          "type": "string",
+          "value": "wrap_content"
+        },
+        {
+          "name": "text",
+          "type": "string",
+          "value": "Relative Layout TextView"
+        },
+        {
+          "name": "layout_alignParentBottom",
+          "type": "boolean",
+          "value": "true"
+        },
+        {
+          "name": "layout_marginBottom",
+          "type": "int",
+          "value": "100"
+        },
+        {
+          "name": "layout_centerHorizontal",
+          "type": "boolean",
+          "value": "true"
+        },
+        {
+          "name": "textColor",
+          "type": "string",
+          "value": "#AEF223"
+        },
+        {
+          "name": "textSize",
+          "type": "int",
+          "value": "20"
+        },
+        {
+          "name": "textStyle",
+          "type": "string",
+          "value": "bold"
+        }
+      ]
+    }
+  ]
+}

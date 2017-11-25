@@ -1,0 +1,329 @@
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" height="match_parent" width="match_parent" background="#FF2312" orientation="vertical">-->
+
+<!--<TextView gravity="center" height="wrap_content" id="@+id/hello_world" layout_centerInParent="true"text="Hello World" textSize="18sp" width="match_parent" />-->
+
+<!--<TextView android:background="#80A0C0" cornerRadius="5dp" height="wrap_content"layout_below="@+id/hello_world" layout_centerHorizontal="true" layout_marginTop="20dp" onClick="logStringNum(&quot;test&quot;, 123)"padding="5dp" pressedColor="#A080C0" text="below hello world" textColor="#8FFF0000"textStyle="bold" width="wrap_content" />-->
+
+<!--</LinearLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/section_1_root" android:layout_width="match_parent" android:background="@color/expert_consultation_screen_background_light" android:layout_height="match_parent">
+
+  <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:paddingBottom="140dp"
+          android:fillViewport="true">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="40dp">
+
+              <FrameLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+                  <ImageView
+                      android:id="@+id/tile_header_image"
+                      android:layout_width="match_parent"
+                      android:layout_height="335dp"
+                      android:adjustViewBounds="true"
+                      android:scaleType="center_crop"
+                      android:src="@drawable/experts_us_launcher_head_picture"/>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="bottom"
+                      android:layout_marginBottom="30dp"
+                      android:orientation="vertical">
+
+                      <TextView
+                          android:id="@+id/tile_header_primary_text"
+                          style="@style/ExpertConsultationTextCondensedBold"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="bottom"
+                          android:layout_marginBottom="3dp"
+                          android:layout_marginTop="25dp"
+                          android:ellipsize="end"
+                          android:focusable="true"
+                          android:gravity="center_horizontal"
+                          android:maxLines="2"
+                          android:text="_Online Doctor visit_"
+                          android:textColor="#FFFFFF"
+                          android:textSize="25dp"/>
+
+                      <TextView
+                          android:id="@+id/tile_header_secendary_text"
+                          style="@style/ExpertConsultationTextMedium"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="10dp"
+                          android:focusable="true"
+                          android:gravity="center_horizontal"
+                          android:lineSpacingExtra="10dp"
+                          android:text="_See world-class doctors in minutes,_"
+                          android:textColor="#FFFFFF"
+                          android:textSize="15dp"/>
+
+                      <LinearLayout
+                          android:id="@+id/tile_first_introduction_view"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="10dp"
+                          android:orientation="horizontal">
+
+                          <TextView
+                              android:id="@+id/tile_header_tertiary_text"
+                              style="@style/ExpertConsultationTextMedium"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:focusable="true"
+                              android:gravity="center_horizontal"
+                              android:text="_available 24/7._"
+                              android:textColor="#FFFFFF"
+                              android:textSize="15dp"/>
+
+                          <LinearLayout
+                              android:id="@+id/how_it_works_layout"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@drawable/experts_us_selector_transparent"
+                              android:gravity="center_horizontal"
+                              android:importantForAccessibility="yes"
+                              android:orientation="horizontal">
+
+                              <TextView
+                                  android:id="@+id/how_it_works_text"
+                                  style="@style/ExpertConsultationTextMedium"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:importantForAccessibility="no"
+                                  android:paddingEnd="3dp"
+                                  android:paddingStart="3dp"
+                                  android:text="_How it works_"
+                                  android:textColor="@color/expert_us_how_it_works_text_color"
+                                  android:textSize="15dp"/>
+                          </LinearLayout>
+                      </LinearLayout>
+                  </LinearLayout>
+              </FrameLayout>
+
+              <LinearLayout
+                  android:id="@+id/tile_intro_list_layout"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="4dp"
+                      android:layout_marginStart="4dp"
+                      android:layout_marginTop="4dp"
+                      android:focusable="true"
+                      android:minHeight="158dp"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="18dp"
+                          android:adjustViewBounds="true"
+                          android:scaleType="centerCrop"
+                          android:src="@drawable/experts_us_skip_waiting_room_illustration"/>
+
+                      <TextView
+                          android:id="@+id/tile_intro_list_text_1"
+                          style="@style/ExpertConsultationTextRegular"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginEnd="40dp"
+                          android:layout_marginStart="40dp"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:text="_Skip the waiting room. Visit with a doctor from the comfort of you home._"
+                          android:textColor="#252525"
+                          android:textSize="15dp"/>
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="4dp"
+                      android:layout_marginStart="4dp"
+                      android:layout_marginTop="4dp"
+                      android:focusable="true"
+                      android:minHeight="158dp"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="18dp"
+                          android:adjustViewBounds="true"
+                          android:scaleType="centerCrop"
+                          android:src="@drawable/experts_us_satisfaction_illustration"/>
+
+                      <TextView
+                          android:id="@+id/tile_intro_list_text_2"
+                          style="@style/ExpertConsultationTextRegular"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginEnd="40dp"
+                          android:layout_marginStart="40dp"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:text="_Convenient. Easy to use. High quality doctors. Prescriptions as needed._"
+                          android:textColor="#252525"
+                          android:textSize="15dp"/>
+                  </LinearLayout>
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginEnd="4dp"
+                      android:layout_marginStart="4dp"
+                      android:layout_marginTop="4dp"
+                      android:focusable="true"
+                      android:minHeight="158dp"
+                      android:orientation="vertical">
+
+                      <ImageView
+                          android:layout_width="90dp"
+                          android:layout_height="90dp"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginTop="18dp"
+                          android:adjustViewBounds="true"
+                          android:scaleType="centerCrop"
+                          android:src="@drawable/experts_us_privacy_illustration"/>
+
+                      <TextView
+                          android:id="@+id/tile_intro_list_text_3"
+                          style="@style/ExpertConsultationTextRegular"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:layout_gravity="center_horizontal"
+                          android:layout_marginEnd="40dp"
+                          android:layout_marginStart="40dp"
+                          android:layout_marginTop="10dp"
+                          android:gravity="center"
+                          android:text="_I like that my info is stored securely and my privacy is protected._"
+                          android:textColor="#252525"
+                          android:textSize="15dp"/>
+                  </LinearLayout>
+              </LinearLayout>
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="3px"
+                  android:layout_marginTop="30dp"
+                  android:background="#E7E7E7"/>
+
+              <LinearLayout
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:minHeight="40dp"
+                  android:orientation="horizontal">
+
+                  <TextView
+                      android:id="@+id/tile_powered_by_text"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center"
+                      android:text="_Powered by_"
+                      android:textColor="#979797"/>
+
+                  <ImageView
+                      android:layout_width="75dp"
+                      android:layout_height="20dp"
+                      android:layout_gravity="center"
+                      android:src="@drawable/expertmvp_logo_amwell_launcher"/>
+              </LinearLayout>
+          </LinearLayout>
+      </ScrollView>
+
+      <LinearLayout
+          android:id="@+id/tile_bottom_layout"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentBottom="true"
+          android:background="#FFFFFF"
+          android:orientation="vertical"
+          android:paddingStart="24dp"
+          android:paddingEnd="24dp"
+          android:layout_marginTop="16dp"
+          android:paddingBottom="16dp">
+
+          <TextView
+              android:id="@+id/tile_enrollment_description"
+              style="@style/ExpertConsultationTextRegular"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center_horizontal"
+              android:layout_marginTop="6dp"
+              android:ellipsize="end"
+              android:focusable="true"
+              android:gravity="center"
+              android:maxLines="2"
+              android:paddingEnd="24dp"
+              android:paddingStart="24dp"
+              android:text="_Enroll for free and be ready when you need it._"
+              android:textColor="#4FA7FF"
+              android:textSize="14dp"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:orientation="horizontal">
+
+              <android.support.v4.widget.Space
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"/>
+
+              <TextView
+                  android:id="@+id/log_in_button"
+                  android:layout_width="150dp"
+                  android:layout_height="36dp"
+                  android:layout_gravity="center"
+                  android:layout_marginEnd="12dp"
+                  android:background="@drawable/experts_us_selector_white_blue"
+                  android:gravity="center"
+                  android:textAllCaps="true"
+                  android:text = "Log in"
+                  android:textColor="#4FA7FF"/>
+
+              <TextView
+                  android:id="@+id/enroll_now_button"
+                  android:layout_width="150dp"
+                  android:layout_height="36dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/baseui_button_blue"
+                  android:gravity="center"
+                  android:textAllCaps="true"
+                  android:text = "Get started"
+                  android:textColor="#FFFFFF"/>
+
+              <android.support.v4.widget.Space
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"/>
+          </LinearLayout>
+
+          <com.samsung.android.app.shealth.expert.consultation.us.dashboard.EmergencyDisclaimerView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+      </LinearLayout>
+</RelativeLayout>

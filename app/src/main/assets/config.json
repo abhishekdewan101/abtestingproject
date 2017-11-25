@@ -1,0 +1,81 @@
+{
+  "type": "RelativeLayout",
+  "properties": [
+    {
+      "name": "width",
+      "value": "match_parent"
+    },
+    {
+      "name": "height",
+      "value": "match_parent"
+    }
+  ],
+  "children": [
+    {
+      "type": "ImageView",
+      "properties": [
+        {
+          "name": "width",
+          "value": "match_parent"
+        },
+        {
+          "name": "height",
+          "value": "match_parent"
+        },
+        {
+          "name": "id",
+          "value": "hero_background"
+        },
+        {
+          "name": "src",
+          "value": "hero"
+        },
+        {
+          "name": "scaleType",
+          "value": "centerCrop"
+        }
+      ]
+    },
+    {
+      "type": "TextView",
+      "properties": [
+        {
+          "name": "width",
+          "value": "wrap_content"
+        },
+        {
+          "name": "height",
+          "value": "wrap_content"
+        },
+        {
+          "name": "text",
+          "value": "Online Specialist Visit"
+        },
+        {
+          "name": "layout_alignParentBottom",
+          "value": "true"
+        },
+        {
+          "name": "layout_marginBottom",
+          "value": "50"
+        },
+        {
+          "name": "layout_centerHorizontal",
+          "value": "true"
+        },
+        {
+          "name": "textColor",
+          "value": "#AE2232"
+        },
+        {
+          "name": "textSize",
+          "value": "20"
+        },
+        {
+          "name": "textStyle",
+          "value": "bold"
+        }
+      ]
+    }
+  ]
+}
